@@ -1,0 +1,15 @@
+{
+  "name": "tellme",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "tellme": "tellme.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-pushover": "^0.2.2",
+    "rucola": "^1.1.3"
+  }
+}
