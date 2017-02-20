@@ -3,6 +3,14 @@ tellme
 
 Send a pushover message
 
+## Install
+
+```sh
+npm install -g @maxkueng/tellme
+```
+
+## Config
+
 `~/.tellmerc`
 ```ini
 
