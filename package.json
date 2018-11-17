@@ -1,15 +1,48 @@
 {
   "name": "@maxkueng/tellme",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI to send Pushover messages",
+  "keywords": [
+    "po",
+    "pushover",
+    "notify",
+    "notification",
+    "message",
+    "messaging",
+    "cli",
+    "commandline",
+    "args"
+  ],
   "bin": {
-    "tellme": "tellme.js"
+    "tellme": "cli.bundle.js"
   },
+  "files": [
+    "cli.bundle.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepack": "npm run build",
+    "build": "rollup -c",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "node-pushover": "^0.2.2",
-    "rucola": "^1.1.3"
+    "get-stdin": "^6.0.0",
+    "pushover-notifications": "^1.2.0",
+    "rucola": "^1.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "rollup": "^0.67.3",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-cli": "^0.1.5",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-executable": "^1.3.0",
+    "rollup-plugin-node-resolve": "^3.4.0"
   }
 }
