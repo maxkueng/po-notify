@@ -43,7 +43,7 @@ const aliases = {
 };
 
 (async () => {
-  const conf = rucola('tellme', {}, aliases);
+  const conf = rucola('ponotify', {}, aliases);
 
   const token = conf.get('token');
   if (!token) {
