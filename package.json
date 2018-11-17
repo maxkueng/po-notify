@@ -13,6 +13,7 @@
     "commandline",
     "args"
   ],
+  "license": "MIT",
   "bin": "cli.bundle.js",
   "files": [
     "cli.bundle.js"

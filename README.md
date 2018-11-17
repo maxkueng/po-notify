@@ -54,4 +54,11 @@ po-notify "Job completed"
 ansible-playbook somestuff.yml && po-notify -t "Ansible done" "somestuff.yml completed successfully. Nice!"
 ```
 
+## License
+
+Copyright (c) 2017 - 2018 Max Kueng
+
+MIT License
+
+
 [po]: https://pushover.net/
