@@ -13,6 +13,11 @@
     "commandline",
     "args"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxkueng/po-notify.git"
+  },
+  "author": "Max Kueng <me@maxkueng.com> (http://maxkueng.com/)",
   "license": "MIT",
   "bin": "cli.bundle.js",
   "files": [
