@@ -10,8 +10,7 @@
     "message",
     "messaging",
     "cli",
-    "commandline",
-    "args"
+    "commandline"
   ],
   "repository": {
     "type": "git",
