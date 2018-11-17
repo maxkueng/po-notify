@@ -99,7 +99,6 @@ const aliases = {
   console.log(payload);
 
   try {
-    return;
     const result = await sendMessage(token, user, payload);
     console.log(result);
   } catch (err) {
