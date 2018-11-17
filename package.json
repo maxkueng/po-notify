@@ -1,5 +1,5 @@
 {
-  "name": "@maxkueng/tellme",
+  "name": "po-notify",
   "version": "1.0.0",
   "description": "CLI to send Pushover messages",
   "keywords": [
@@ -13,9 +13,7 @@
     "commandline",
     "args"
   ],
-  "bin": {
-    "tellme": "cli.bundle.js"
-  },
+  "bin": "cli.bundle.js",
   "files": [
     "cli.bundle.js"
   ],

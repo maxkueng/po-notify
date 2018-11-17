@@ -6,21 +6,19 @@ Send a pushover message
 ## Install
 
 ```sh
-npm install -g @maxkueng/tellme
+npm install -g po-notify
 ```
 
 ## Config
 
-`~/.tellmerc`
+`~/.ponotifyrc`
 ```ini
-
-[pushover]
-apikey = blablabla
-userkey = stuffthing
+token = blablabla
+user = stuffthing
 ```
 
 ## Example
 
 ```sh
-ansible-playbook somestuff.yml && tellme "Ansible done"
+ansible-playbook somestuff.yml && po-notify "Ansible done"
 ```
