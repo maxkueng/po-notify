@@ -11,6 +11,7 @@ const priorities = {
 };
 
 function fail(message) {
+  // eslint-disable-next-line no-console
   console.error(`Error: ${message}`);
   process.exit(1);
 }
@@ -96,12 +97,11 @@ const aliases = {
     retry,
     expire,
   };
-  console.log(payload);
 
   try {
-    const result = await sendMessage(token, user, payload);
-    console.log(result);
+    await sendMessage(token, user, payload);
   } catch (err) {
+    // eslint-disable-next-line no-console
     console.error(err.message);
   }
 })();
